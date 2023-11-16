@@ -1,10 +1,16 @@
-h1 {
-    color: hotpink;
-    font-family: cursive;
+:root {
+    --primary-color: #640404;
+    --secondary-color: #0c0c0c;
+    --tertiary-color: #960202;
+    --accent-color: #fc7c7c;
 }
 
 body {
     height: 100vh;
-    color: #1f1f1f;
-    background: linear-gradient(to bottom, #bada55, #c0ffee);
+    color: var(--secondary-color);
+    background: var(--tertiary-color);
+}
+
+a {
+    color: var(--accent-color);
 }
