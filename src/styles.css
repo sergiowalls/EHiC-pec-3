@@ -18,3 +18,7 @@ a {
 h1, h2, h3, p, body {
     font-family: 'Libre Franklin Variable', sans-serif;
 }
+
+img {
+    max-width: 100%;
+}
