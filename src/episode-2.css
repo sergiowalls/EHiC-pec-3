@@ -1,0 +1,12 @@
+body {
+    filter: grayscale(100%);
+    transition: filter 3s ease-in-out;
+}
+
+.addColor {
+    filter: grayscale(0%);
+}
+
+span {
+    cursor: pointer;
+}

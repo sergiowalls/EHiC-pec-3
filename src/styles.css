@@ -6,12 +6,11 @@
 }
 
 body {
-    height: 100vh;
     color: var(--secondary-color);
     background: var(--tertiary-color);
 }
 
-a {
+a, span {
     color: var(--accent-color);
 }
 
