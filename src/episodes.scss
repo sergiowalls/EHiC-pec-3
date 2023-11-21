@@ -1,5 +1,22 @@
-figure {
-    display: inline-block;
-    width: 30%;
-    margin-inline: 0;
+@import "variables";
+
+.episodes {
+    display: grid;
+    grid-gap: 1rem;
+    justify-content: center;
+
+    @include large {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include medium {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include small {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    figure {
+        margin-inline: 0;
+        margin-block: 0;
+    }
 }
