@@ -2,3 +2,21 @@ $primary-color: #640404;
 $secondary-color: #0c0c0c;
 $tertiary-color: #960202;
 $accent-color: #fc7c7c;
+
+@mixin small {
+  @media only screen and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: 1440px) {
+    @content;
+  }
+}
