@@ -17,3 +17,12 @@ h1, h2, h3, p, body {
 img {
   max-width: 100%;
 }
+
+.wrapped-image {
+  max-width: min(800px, 100%);
+
+  @include large {
+    float: right;
+    margin-left: 16px;
+  }
+}
