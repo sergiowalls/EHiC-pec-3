@@ -3,4 +3,49 @@
 footer {
   margin-top: auto;
   background-color: $secondary-color;
+  display: grid;
+  grid-gap: 1rem;
+  justify-content: center;
+
+  @include large {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include medium {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include small {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  div {
+    padding: 16px;
+    color: white;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin-block: 0;
+
+    li {
+      margin-top: 8px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  a, span {
+    text-decoration: none;
+    color: white;
+  }
+
+  #logo {
+    max-height: 80px;
+  }
 }
