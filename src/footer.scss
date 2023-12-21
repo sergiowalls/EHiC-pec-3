@@ -20,6 +20,10 @@ footer {
   div {
     padding: 16px;
     color: white;
+
+    @include small {
+      text-align: center;
+    }
   }
 
   ul {
