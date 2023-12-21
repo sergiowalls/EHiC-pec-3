@@ -13,7 +13,11 @@
 <main>
     <h2>#8 - En el episodio anterior...</h2>
 
-    <img class="wrapped-image" src="pics/episode-8.webp?width=800" alt="Episodio 8">
+    <picture>
+        <source class="wrapped-image" media="(max-width: 1023px)" srcset="pics/episode-8-close.jpg?as=webp&width=800"
+                type="image/webp">
+        <img class="wrapped-image" src="pics/episode-8.webp?width=800" alt="Episodio 8">
+    </picture>
 
     <p>El octavo episodio de WandaVision, titulado "Previously On", representa un cambio significativo en la narrativa,
         alejándose de la estructura de sitcom para ofrecer una profunda exploración del pasado de <a
