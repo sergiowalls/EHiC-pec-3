@@ -4,6 +4,10 @@ header {
   position: relative;
   z-index: 1;
 
+  @include small {
+    text-align: center;
+  }
+
   ul {
     list-style-type: none;
     margin: 0;
@@ -13,7 +17,13 @@ header {
   }
 
   li {
-    float: left;
+    @include small {
+      display: inline-block;
+    }
+
+    @include medium-and-large {
+      float: left;
+    }
 
     a {
       display: block;
