@@ -8,6 +8,10 @@ body {
   flex-direction: column;
 }
 
+main {
+  padding-bottom: 8px;
+}
+
 a, span {
   color: $accent-color;
 }
