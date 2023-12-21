@@ -1,0 +1,47 @@
+@import "variables";
+
+#poster {
+  img {
+    max-width: min(500px, 100%);
+    animation: 3s infinite alternate wanda-star;
+  }
+
+  @include small {
+    text-align: center;
+    width: 100%;
+  }
+
+  @include medium-and-large {
+    float: left;
+    margin-right: 16px;
+  }
+}
+
+@keyframes wanda-star {
+  from {
+    clip-path: polygon(
+                    50% 20%,
+                    65% 30%,
+                    80% 30%,
+                    65% 45%,
+                    80% 60%,
+                    50% 50%,
+                    20% 60%,
+                    35% 45%,
+                    20% 30%,
+                    35% 30%);
+  }
+  to {
+    clip-path: polygon(
+                    50% 0%,
+                    65% 0%,
+                    100% 0%,
+                    100% 45%,
+                    100% 100%,
+                    50% 100%,
+                    0% 100%,
+                    0% 45%,
+                    0% 0%,
+                    35% 0%);
+  }
+}
