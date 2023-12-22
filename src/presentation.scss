@@ -28,3 +28,52 @@
   }
 }
 
+.svg-container {
+  text-align: center;
+
+  svg {
+    max-width: min(400px, 100%);
+
+    @include medium-and-large {
+      float: right;
+      margin-left: 16px;
+    }
+
+    #box {
+      animation: 5s infinite rectangle-color;
+    }
+    #letters {
+      animation: 5s infinite letters-color;
+    }
+  }
+}
+
+@keyframes rectangle-color {
+  from {
+    fill: #cf1928;
+  }
+  33% {
+    fill: #f9f9f9;
+  }
+  66% {
+    fill: #000000;
+  }
+  to {
+    fill: #cf1928;
+  }
+}
+
+@keyframes letters-color {
+  from {
+    fill: #f9f9f9;
+  }
+  33% {
+    fill: #000000;
+  }
+  66% {
+    fill: #f9f9f9;
+  }
+  to {
+    fill: #f9f9f9;
+  }
+}
