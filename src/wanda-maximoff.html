@@ -16,7 +16,15 @@
     <h3>Alias: Bruja Escarlata</h3>
     <h3>Interpretada por: Elizabeth Olsen</h3>
 
-    <img class="wrapped-image" src="pics/wanda-maximoff.webp?width=800" alt="Wanda Maximoff">
+    <picture class="wrapped-image">
+        <source srcset="pics/wanda-maximoff.webp?width=480 480w,
+                        pics/wanda-maximoff.webp?width=800 800w"
+                sizes="(max-width: 480px) 100vw, 800px" type="image/webp">
+        <source srcset="pics/wanda-maximoff.webp?as=jpeg&width=480 480w,
+                        pics/wanda-maximoff.webp?as=jpeg&width=800 800w"
+                sizes="(max-width: 480px) 100vw, 800px" type="image/jpeg">
+        <img src="pics/wanda-maximoff.webp?width=800" alt="Wanda Maximoff">
+    </picture>
 
     <h3>Descripción del personaje</h3>
     <p>Wanda Maximoff, también conocida como la Bruja Escarlata, es un personaje central en la serie WandaVision.

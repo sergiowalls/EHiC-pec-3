@@ -15,7 +15,15 @@
     <h2>Jimmy Woo</h2>
     <h3>Interpretado por: Randall Park</h3>
 
-    <img class="wrapped-image" src="pics/jimmy-woo.webp?width=800" alt="Jimmy Woo">
+    <picture class="wrapped-image">
+        <source srcset="pics/jimmy-woo.webp?width=480 480w,
+                        pics/jimmy-woo.webp?width=800 800w"
+                sizes="(max-width: 480px) 100vw, 800px" type="image/webp">
+        <source srcset="pics/jimmy-woo.webp?as=jpeg&width=480 480w,
+                        pics/jimmy-woo.webp?as=jpeg&width=800 800w"
+                sizes="(max-width: 480px) 100vw, 800px" type="image/jpeg">
+        <img src="pics/jimmy-woo.webp?width=800" alt="Jimmy Woo">
+    </picture>
 
     <h3>Descripción del personaje</h3>
     <p>Jimmy Woo, interpretado por el carismático Randall Park, es un personaje destacado en la serie WandaVision.
