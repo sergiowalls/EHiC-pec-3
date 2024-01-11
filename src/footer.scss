@@ -30,20 +30,19 @@ footer {
 
     li {
       margin-top: 8px;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
     }
-  }
 
-  a {
-    text-decoration: none;
-  }
-
-  span {
-    font-weight: bold;
-  }
-
-  a, span {
-    text-decoration: none;
-    color: white;
+    @include small {
+      .footer-link {
+        padding-top: 13px;
+        padding-bottom: 13px;
+      }
+    }
   }
 
   #logo {
