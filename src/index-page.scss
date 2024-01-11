@@ -3,6 +3,7 @@
 #poster {
   img {
     max-width: min(500px, 100%);
+    height: auto;
     animation: 3s infinite alternate wanda-star;
   }
 
