@@ -1,5 +1,5 @@
 # M4.257 - Herramientas HTML y CSS
 
-## PEC 2. Web y recursos multimedia
+## PEC 3. Rendimiento web
 
-https://sergiowalls.github.io/EHiC-pec-2/
+https://sergiowalls.github.io/EHiC-pec-3/
